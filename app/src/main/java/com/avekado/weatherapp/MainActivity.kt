@@ -15,24 +15,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.main_activity)
         requestPermission()
     }
     private fun requestPermission(){
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            if(ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.ACCESS_FINE_LOCATION)){
-                Snackbar.make(binding.root, "Permission Needed For Location!", Snackbar.LENGTH_INDEFINITE).setAction("Give Permission"){
-                    //request permission
-                    permissionLauncher.launch(Manifest.permission.ACCESS_FINE_LOCATION)
-                }.show()
 
-            }else{
-                //request permission
-                permissionLauncher.launch(Manifest.permission.ACCESS_FINE_LOCATION)
-            }
-
-        }
 
     }
 }
