@@ -8,8 +8,6 @@ import androidx.core.app.ActivityCompat
 
 val key = "def590d3828c48bf855185009233107"
 
-private lateinit var binding: ActivityMainBinding
-
 class MainActivity : AppCompatActivity() {
 
 
