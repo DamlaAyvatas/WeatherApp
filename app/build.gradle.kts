@@ -73,6 +73,7 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
-
+    implementation ("io.ktor:ktor-client-core:1.7.3")
+    implementation ("io.ktor:ktor-client-json:1.7.3")
 
 }
