@@ -64,6 +64,7 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation(platform("androidx.compose:compose-bom:2023.03.00"))
     implementation("com.android.support:support-annotations:28.0.0")
+    implementation("com.google.firebase:firebase-crashlytics-buildtools:2.9.8")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -73,7 +74,8 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
-    implementation ("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.0")
+    implementation ("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
+
 
 
 }
