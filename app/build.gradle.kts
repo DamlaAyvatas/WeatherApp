@@ -40,6 +40,9 @@ android {
     buildFeatures {
         compose = true
     }
+    buildFeatures{
+        viewBinding = true
+    }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.3"
     }
@@ -65,6 +68,11 @@ dependencies {
     implementation(platform("androidx.compose:compose-bom:2023.03.00"))
     implementation("com.android.support:support-annotations:28.0.0")
     implementation("com.google.firebase:firebase-crashlytics-buildtools:2.9.8")
+    implementation("com.google.android.gms:play-services-tflite-support:16.1.0")
+    implementation("androidx.privacysandbox.tools:tools-core:1.0.0-alpha05")
+    implementation("com.android.volley:volley:1.2.1")
+    implementation("androidx.recyclerview:recyclerview:1.3.1")
+    implementation("com.google.android.material:material:1.9.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -75,6 +83,13 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
     implementation ("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
+    implementation("khttp:khttp:1.0.0")
+    implementation ("io.ktor:ktor-client-core:1.6.4")
+    implementation ("io.ktor:ktor-client-json:1.6.4")
+    implementation ("io.ktor:ktor-client-cio:1.6.4")
+    implementation("io.ktor:ktor-server-content-negotiation:1.6.4")
+    implementation ("com.squareup.picasso:picasso:2.8")
+
 
 
 
